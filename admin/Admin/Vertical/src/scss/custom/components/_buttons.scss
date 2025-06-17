@@ -1,0 +1,343 @@
+// 
+// buttons.scss
+//
+
+.btn {
+    color: $white;
+
+    .mdi {
+        &:before {
+            margin-top: -1px;
+        }
+    }
+}
+
+.btn-rounded {
+    border-radius: 2em;
+}
+
+//
+// light button
+// 
+.btn-light,.btn-white {
+    color: $gray-900;
+}
+
+//
+// Link buttons
+//
+// Make a button look and behave like a link
+.btn-link {
+    font-weight: $font-weight-normal;
+    color: $link-color;
+    background-color: transparent;
+    @include hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    &:focus,
+    &.focus {
+        text-decoration: $link-hover-decoration;
+        border-color: transparent;
+        box-shadow: none;
+    }
+    &:disabled,
+    &.disabled {
+        color: $btn-link-disabled-color;
+        pointer-events: none;
+    } // No need for an active state here
+} 
+//
+// Alternate buttons
+//
+@each $color,
+$value in $theme-colors {
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+    }
+}
+
+// 
+// Button Extra Small Size
+// 
+
+.btn-xs {
+    padding: .2rem .6rem;
+    font-size: .75rem;
+    border-radius: .15rem;
+}
+
+// 
+// Button labels
+//
+
+.btn-label {
+    margin: -.55rem .9rem -.55rem -.9rem;
+    padding: .6rem .9rem;
+    background-color: rgba($gray-900,0.1);
+}
+
+.btn-label-right {
+    margin: (-$btn-padding-y) (-$btn-padding-x) (-$btn-padding-y) ($btn-padding-x);
+    padding: ($btn-padding-y) ($btn-padding-x);
+    background-color: rgba($gray-900,0.1);
+    display: inline-block;
+}
+
+// btn bordered
+
+@each $color, $value in $theme-colors {
+  .btn-bordered-#{$color} {
+      border-bottom: 2px solid darken($value, 7.5%);
+  }
+}
+
+
+/* Social Buttons */
+
+.btn-facebook {
+    color: $white !important;
+    background-color: #3b5998 !important;
+}
+.btn-twitter {
+    color: $white !important;
+    background-color: #00aced !important;
+}
+.btn-linkedin {
+    color: $white !important;
+    background-color: #007bb6 !important;
+}
+.btn-dribbble {
+    color: $white !important;
+    background-color: #ea4c89 !important;
+}
+.btn-googleplus {
+    color: $white !important;
+    background-color: #dd4b39 !important;
+}
+.btn-instagram  {
+    color: $white !important;
+    background-color: #517fa4 !important;
+}
+.btn-pinterest  {
+    color: $white !important;
+    background-color: #cb2027 !important;
+}
+.btn-dropbox  {
+    color: $white !important;
+    background-color: #007ee5 !important;
+}
+.btn-flickr  {
+    color: $white !important;
+    background-color: #ff0084 !important;
+}
+.btn-tumblr  {
+    color: $white !important;
+    background-color: #32506d !important;
+}
+.btn-skype {
+    color: $white !important;
+    background-color: #00aff0 !important;
+}
+.btn-youtube  {
+    color: $white !important;
+    background-color: #bb0000 !important;
+}
+.btn-github  {
+    color: $white !important;
+    background-color: #171515 !important;
+}
+
+
+
+
+
+
+
+/* CSS Switch */
+input[data-switch] {
+    display: none;
+  }
+  input[data-switch] + label {
+    font-size: 1em;
+    line-height: 1;
+    width: 56px;
+    height: 24px;
+    background-color: #ddd;
+    background-image: none;
+    border-radius: 2rem;
+    padding: 0.16667rem;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    font-family: inherit;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  input[data-switch] + label:before {
+    color: $dark;
+    content: attr(data-off-label);
+    display: block;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    position: absolute;
+    right: 2px;
+    margin: 0.21667rem;
+    top: 0;
+    text-align: center;
+    min-width: 1.66667rem;
+    overflow: hidden;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  input[data-switch] + label:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    background-color: #f7f7f7;
+    box-shadow: none;
+    border-radius: 2rem;
+    height: 20px;
+    width: 20px;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  input[data-switch]:checked + label {
+    background-color: $primary;
+  }
+  input[data-switch]:checked + label:before {
+    color: $white;
+    content: attr(data-on-label);
+    right: auto;
+    left: 2px;
+  }
+  input[data-switch]:checked + label:after {
+    left: 33px;
+    background-color: #f7f7f7;
+  }
+  
+  input[data-switch="bool"] + label {
+    background-color: $danger;
+  }
+  input[data-switch="bool"] + label:before,input[data-switch="bool"]:checked + label:before,
+  input[data-switch="default"]:checked + label:before{
+    color: $white !important;
+  }
+  
+  input[data-switch="bool"]:checked + label {
+    background-color: $success;
+  }
+
+  input[data-switch="primary"]:checked + label {
+    background-color: $primary;
+  }
+  
+  input[data-switch="success"]:checked + label {
+    background-color: $success;
+  }
+  
+  input[data-switch="info"]:checked + label {
+    background-color: $info;
+  }
+  
+  input[data-switch="warning"]:checked + label {
+    background-color: $warning;
+  }
+  
+  input[data-switch="dark"]:checked + label {
+    background-color: $dark;
+  }
+  
+  input[data-switch="pink"]:checked + label {
+    background-color: $pink;
+  }
+  
+  input[data-switch="purple"]:checked + label {
+    background-color: $purple;
+  }
+  
+  input[data-switch="orange"]:checked + label {
+    background-color: $orange;
+  }
+  
+  input[data-switch="brown"]:checked + label {
+    background-color: $brown;
+  }
+  
+  input[data-switch="teal"]:checked + label {
+    background-color: $teal;
+  }
+  
+  
+  /* Button Switch css */
+  
+  .btn-switch {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .btn-switch > input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    left: -100%;
+    top: -100%;
+  }
+  .btn-switch > input[type="checkbox"] + .btn {
+    background-color: transparent !important;
+    border-color: $primary;
+    color: $primary !important;
+  }
+  .btn-switch > input[type="checkbox"] + .btn > em {
+    display: inline-block;
+    border: 1px solid $primary;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 0 4px 0 0;
+    top: 1px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .btn-switch > input[type="checkbox"] + .btn > em:before {
+    opacity: 0;
+  }
+  .btn-switch > input[type="checkbox"]:checked + .btn {
+    background-color: $primary !important;
+    color: $white !important;
+  }
+  .btn-switch > input[type="checkbox"]:checked + .btn > em {
+    background-color: $white;
+    color: $primary !important;
+  }
+  .btn-switch > input[type="checkbox"]:checked + .btn > em:before {
+    opacity: 1;
+  }
+  
+  @each $color,
+  $value in $theme-colors {
+    .btn-switch-#{$color} {
+        > input[type="checkbox"]{
+            + .btn, &:checked + .btn > em{
+                color: $value !important;
+            }
+
+            + .btn,  + .btn > em{
+                border-color: $value !important;
+            }
+
+            &:checked + .btn {
+                background-color: $value !important;
+            }
+        }
+    }
+  }
+
+  
+  

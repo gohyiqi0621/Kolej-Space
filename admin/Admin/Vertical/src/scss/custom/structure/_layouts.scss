@@ -1,0 +1,12 @@
+//
+// layouts.scss
+//
+
+@media (min-width: 992px) {
+    // Unsticky Layout
+    .unsticky-layout {
+        .left-side-menu, .navbar-custom {
+            position: absolute;
+        }
+    }
+}

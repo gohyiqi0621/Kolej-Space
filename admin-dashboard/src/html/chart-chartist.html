@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Chartist Chart | Zircos - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Responsive bootstrap 4 admin template" name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Chartist Chart CSS -->
+        <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+
+    </head>
+
+    <body data-layout="horizontal">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            @@include('./partials/horizontal-nav.html')
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Zircos</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Charts</a></li>
+                                            <li class="breadcrumb-item active">Chartist charts</li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Chartist charts</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card-box">
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <h4 class="header-title">Advanced Smil Animations</h4>
+                                            <p class="sub-header">
+                                                Chartist provides a simple API to animate the elements on the Chart using SMIL. Usually you can achieve most animation with CSS3 animations but in some cases you'd like to animate SVG properties that are not available in CSS.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="smil-animations" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h4 class="header-title">Simple line chart</h4>
+                                            <p class="sub-header">
+                                                An example of a simple line chart with three series. You can edit this example in realtime.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="simple-line-chart" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Line Scatter Diagram</h4>
+                                            <p class="sub-header">
+                                                This advanced example uses a line chart to draw a scatter diagram. The data object is created with a functional style random mechanism.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="scatter-diagram" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Line chart with tooltips</h4>
+                                            <p class="sub-header">
+                                                An example of a simple line chart with two series. You can edit this example in realtime.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="line-chart-tooltips" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Line chart with area</h4>
+                                            <p class="sub-header">
+                                                This chart uses the showArea option to draw line, dots but also an area shape. Use the low option to specify a fixed lower bound that will make the area expand.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="chart-with-area" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Bi-polar Line chart with area only</h4>
+                                            <p class="sub-header">
+                                                You can also only draw the area shapes of the line chart. Area shapes will always be constructed around their areaBase (that can be configured in the options) which also allows you to draw nice bi-polar areas.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="bi-polar-line" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">SVG Path animation</h4>
+                                            <p class="sub-header">
+                                                Path animation is made easy with the SVG Path API. The API allows you to modify complex SVG paths and transform them for different animation morphing states.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="svg-animation" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Line Interpolation / Smoothing</h4>
+                                            <p class="sub-header">
+                                                By default Chartist uses a cardinal spline algorithm to smooth the lines. However, like all other things in Chartist, this can be customized easily!
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="line-smoothing" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Different configuration for different series</h4>
+                                            <p class="sub-header">
+                                                By naming your series using the series object notation with a name property, you can enable the individual configuration of series specific settings.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="different-series" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">SVG Animations chart</h4>
+                                            <p class="sub-header">
+                                                This advanced example uses a line chart to draw a scatter diagram. The data object is created with a functional style random mechanism.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="svg-dot-animation" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Bi-polar bar chart</h4>
+                                            <p class="sub-header">
+                                                A bi-polar bar chart with a range limit set with low and high. There is also an interpolation function used to skip every odd grid line / label.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="bi-polar-bar" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Overlapping bars on mobile</h4>
+                                            <p class="sub-header">
+                                                This example makes use of label interpolation and the seriesBarDistance property that allows you to make bars overlap over each other.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="overlapping-bars" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Multi-line labels</h4>
+                                            <p class="sub-header">
+                                                Chartist will figure out if your browser supports foreignObject and it will use them to create labels that are based on regular HTML text elements.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="multi-line-chart" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Stacked bar chart</h4>
+                                            <p class="sub-header">
+                                                You can also set your bar chart to stack the series bars on top of each other easily by using the stackBars property in your configuration.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="stacked-bar-chart" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Horizontal bar chart</h4>
+                                            <p class="sub-header">
+                                                Guess what! Creating horizontal bar charts is as simple as it can get. There's no new chart type you need to learn, just passing an additional option is enough.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="horizontal-bar-chart" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Extreme responsive configuration</h4>
+                                            <p class="sub-header">
+                                                As all settings of a chart can be customized with the responsive configuration override mechanism of Chartist, you can create a chart that adopts to every media condition!
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="extreme-chart" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Distributed series</h4>
+                                            <p class="sub-header">
+                                                Sometime it's desired to have bar charts that show one bar per series distributed along the x-axis. If this option is enabled, you need to make sure that you pass a single series array to Chartist that contains the series values.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="distributed-series" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Label placement</h4>
+                                            <p class="sub-header">
+                                                You can change the position of the labels on line and bar charts easily by using the position option inside of the axis configuration.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="label-placement-chart" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Animating a Donut with Svg.animate</h4>
+                                            <p class="sub-header">
+                                                Although it'd be also possible to achieve this animation with CSS, with some minor suboptimal things, here's an example of how to animate donut charts using Chartist.Svg.animate and SMIL.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="animating-donut" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Simple pie chart</h4>
+                                            <p class="sub-header">
+                                                A very simple pie chart with label interpolation to show percentage instead of the actual data series value.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="simple-pie" class="ct-chart ct-golden-section simple-pie-chart-chartist"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Pie chart with custom labels</h4>
+                                            <p class="sub-header">
+                                                This pie chart is configured with custom labels specified in the data object. On desktop we use the labelOffset property to offset the labels from the center.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="pie-chart" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+                                            <h4 class="header-title">Gauge chart</h4>
+                                            <p class="sub-header">
+                                                This pie chart uses donut, startAngle and total to draw a gauge chart.
+                                            </p>
+
+                                            <div class="p-4" dir="ltr">
+                                                <div id="gauge-chart" class="ct-chart ct-golden-section"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                </div>
+                            </div>
+                            <!-- end col-->
+
+                        </div>
+                        <!-- end row -->
+
+                    </div>
+                    <!-- end container-fluid -->
+
+                </div>
+                <!-- end content -->
+
+                @@include('./partials/footer.html')
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        @@include('./partials/right-sidebar.html')
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!--Chartist Chart-->
+        <script src="assets/libs/chartist/chartist.min.js"></script>
+        <script src="assets/libs/chartist/chartist-plugin-tooltip.min.js"></script>
+
+        <!-- Init js -->
+        <script src="assets/js/pages/chartist.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+
+    </body>
+
+</html>

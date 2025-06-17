@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Flot Chart | Zircos - Responsive Bootstrap 4 Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Responsive bootstrap 4 admin template" name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        @@include('./partials/topbar.html') 
+        
+        @@include('./partials/left-sidebar.html')
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Zircos</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Charts</a></li>
+                                        <li class="breadcrumb-item active">Flot Charts</li>
+                                    </ol>
+                                </div>
+                                <h4 class="page-title">Flot Charts</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-box">
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="demo-box">
+                                            <h4 class="header-title">Multiple Statistics</h4>
+                                            <p class="sub-header">
+                                                Stacked chart not only shows the trends over time, you can also see the cumulative sum of all data.Your awesome text goes here.
+                                            </p>
+
+                                            <div id="website-stats" style="height: 320px;" class="flot-chart"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="demo-box">
+                                            <h4 class="header-title">Realtime Statistics</h4>
+                                            <p class="sub-header">
+                                                You can update a chart periodically to get a real-time effect by using a timer to insert the new data in the plot and redraw it.
+                                            </p>
+
+                                            <div id="flotRealTime" style="height: 320px;" class="flot-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+                                <div class="row mt-5">
+                                    <div class="col-lg-6 mt-2">
+                                        <div class="demo-box">
+                                            <h4 class="header-title">Line Chart</h4>
+                                            <p class="sub-header">
+                                                The line chart is most often used chart, aslo the easiest to make, it shows trends over time, visualizes data and information, so users can know how exactly these numbers are relate to each other in one glance.
+                                            </p>
+
+                                            <div id="website-stats1" style="height: 320px;" class="flot-chart"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mt-2">
+                                        <div class="demo-box">
+                                            <h4 class="header-title">Donut Pie</h4>
+                                            <p class="sub-header">
+                                                Pie chart is used to see the proprotion of each data groups, making Flot pie chart is pretty simple, in order to make pie chart you have to incldue jquery.flot.pie.js plugin.
+                                            </p>
+
+                                            <div id="donut-chart">
+                                                <div id="donut-chart-container" class="flot-chart" style="height: 260px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- end row -->
+
+                                <div class="row mt-5">
+
+                                    <div class="col-lg-6 mt-2">
+                                        <div class="demo-box">
+                                            <h4 class="header-title">Pie Chart</h4>
+                                            <p class="sub-header">
+                                                Pie chart is used to see the proprotion of each data groups, making Flot pie chart is pretty simple, in order to make pie chart you have to incldue jquery.flot.pie.js plugin.
+                                            </p>
+
+                                            <div id="pie-chart">
+                                                <div id="pie-chart-container" class="flot-chart" style="height: 260px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mt-2">
+                                        <div class="demo-box">
+                                            <h4 class="header-title">Stacked Bar chart</h4>
+                                            <p class="sub-header">
+                                                With the stack plugin, you can have Flot stack the series. This is useful if you wish to display both a total and the constituents it is made of.
+                                            </p>
+
+                                            <div id="ordered-bars-chart" style="height: 320px;"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- end row -->
+
+                                <div class="row mt-5">
+                                    <div class="col-12 mt-2">
+                                        <div class="demo-box">
+                                            <h4 class="header-title">Line Chart</h4>
+                                            <p class="sub-header">
+                                                The line chart is most often used chart, aslo the easiest to make, it shows trends over time, visualizes data and information, so users can know how exactly these numbers are relate to each other in one glance.
+                                            </p>
+
+                                            <div id="line-chart-alt" style="height:320px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+                                <div class="row mt-5">
+                                    <div class="col-12 mt-2">
+                                        <div class="demo-box">
+                                            <h4 class="header-title mb-4">Combine Chart</h4>
+
+                                            <div id="combine-chart">
+                                                <div id="combine-chart-container" class="flot-chart" style="height: 320px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+                            </div>
+                        </div>
+                        <!-- end col-->
+
+                    </div>
+                    <!-- end row -->
+
+                </div>
+                <!-- end container-fluid -->
+
+            </div>
+            <!-- end content -->
+
+            @@include('./partials/footer.html')
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    @@include('./partials/right-sidebar.html')
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <script src="assets/libs/flot-charts/jquery.flot.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.time.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.tooltip.min.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.resize.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.pie.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.selection.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.stack.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.orderBars.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.crosshair.js"></script>
+    <script src="assets/libs/flot-charts/jquery.flot.axislabels.js"></script>
+
+    <script src="assets/js/pages/flot.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>

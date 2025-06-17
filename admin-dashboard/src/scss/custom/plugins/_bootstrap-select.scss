@@ -1,0 +1,54 @@
+//
+// bootstrap-select.scss
+//
+ 
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100% !important;
+}
+
+.bootstrap-select {
+    .dropdown-menu{
+        .dropdown-menu {
+            li{
+                a{
+                    display: block;
+                    width: 100%;
+                    clear: both;
+                    font-weight: 400;
+                    color: $dark;
+                    text-align: inherit;
+                    white-space: nowrap;
+                    background: 0 0;
+                    border: 0;
+                    &:hover {
+                      background: $primary;
+                      color: $white;
+                    }
+                  }
+            }
+        }
+    }
+    .dropdown-toggle{
+        &:after {
+            content: "\F140";
+            display: inline-block;
+            font-family: "Material Design Icons";
+        }
+        &:focus {
+            outline: none !important;
+            outline-offset: 0;
+        }
+    }
+    a {
+        outline: none !important;
+    }
+    .inner {
+        overflow-y: inherit !important;
+    }
+    >.btn-pink {
+        &.bs-placeholder{
+            color: $white !important;
+        }
+    }
+}
+

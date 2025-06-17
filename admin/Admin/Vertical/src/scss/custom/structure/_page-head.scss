@@ -1,0 +1,40 @@
+// 
+// page-title.scss
+//
+
+.page-title-box {
+    position: relative;
+    // background-color: $card-bg;
+    padding: 0 30px;
+    margin: 0 -30px 0px -30px;
+    .page-title {
+        font-size: 20px;
+        margin: 0;
+        line-height: 70px;
+    }
+
+    .page-title-right {
+        float: right;
+        margin-top: 12px;
+    }
+    .breadcrumb {
+        background-color: transparent;
+        padding: .75rem 0;
+    }
+}
+
+
+@include media-breakpoint-down(sm) {
+    .page-title-box {
+        .page-title {
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height: 70px;
+        }
+        .page-title-right {
+            display: none;
+        }
+    }
+}

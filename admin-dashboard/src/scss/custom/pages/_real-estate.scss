@@ -1,0 +1,120 @@
+
+/* ==========
+Real Estate
+============ */
+.property-card {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  background-clip: padding-box;
+
+  .property-image {
+    display: block;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .property-action {
+    padding: 12px 15px;
+    border-top: 1px solid rgba($dark, 0.1);
+  }
+  .property-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.property-card.property-horizontal {
+  .property-content {
+    width: 100%;
+
+
+    .listingInfo {
+      display: table-cell;
+      height: 155px;
+      vertical-align: middle;
+    }
+    .property-action {
+
+      a {
+        color: $dark;
+        transition: color .3s ease;
+        display: inline-block;
+        border: 1px solid $gray-400;
+        padding: 1px 6px;
+        border-radius: 3px;
+
+        i {
+          font-size: 14px;
+          margin-right: 5px;
+          vertical-align: baseline;
+        }
+      }
+    }
+
+  }
+}
+@media (min-width: 576px) {
+  .property-card.property-horizontal {
+    .property-content {
+      height: 230px;
+    }
+  }
+}
+
+/* Property detail page */
+.property-detail-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  .bx-wrapper {
+    margin-bottom: 0;
+
+    .bx-controls-direction a {
+      z-index: 9;
+    }
+  }
+  #bx-pager a.active img {
+    border: 1px solid $primary;
+  }
+  #bx-pager a img {
+    padding: 3px;
+    border: 1px solid $gray-400;
+  }
+  .proprerty-features {
+    li {
+      line-height: 30px;
+    }
+  }
+  #map-property {
+    height: 300px;
+    background: #69c;
+  }
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+  background: url('../images/plugins/controls.png') no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+  background: url('../images/plugins/controls.png') no-repeat -43px -32px;
+}
+
+/* LOADER */
+.bx-wrapper .bx-loading {
+  background: url('../images/plugins/bx_loader.gif') center center no-repeat #ffffff;
+}
+
+
+// real-estate-agents
+.agents-mails-checkbox {
+  label{
+    margin-bottom: 0px;
+  }
+  a{
+    color: $gray-500;
+  }
+}

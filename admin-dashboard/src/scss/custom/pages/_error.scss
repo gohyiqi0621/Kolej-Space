@@ -1,0 +1,13 @@
+// 
+// error.scss
+//
+
+// Error text with shadow
+.text-error {
+    color: $white;
+    font-size: 98px;
+    line-height: 150px;
+    &.shadow-text{
+        text-shadow: rgba($white, 0.3) 5px 1px, rgba($white, 0.2) 12px 3px, rgba($white, 0.1) 6px 4px;
+    }
+}

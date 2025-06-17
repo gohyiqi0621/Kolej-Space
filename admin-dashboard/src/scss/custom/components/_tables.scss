@@ -1,0 +1,109 @@
+// 
+// tables.scss
+//
+
+/* Table type box */
+
+.table-box {
+  display: table;
+  height: 100%;
+  width: 100%;
+
+  .table-detail {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+//Table centered (Custom)
+.table-centered {
+    td,th {
+        vertical-align: middle !important;
+    }
+}
+
+// Custom table components (Custom)
+.table {
+  th {
+      font-weight: $font-weight-medium;
+  }
+  .table-user {
+      img {
+          height: 30px;
+          width: 30px;
+      }
+  }
+}
+
+.action-icon {
+  color: $gray-600;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 0 3px;
+
+  &:hover {
+      color: $gray-700;
+  }
+}
+
+// Table colored border
+
+.table-colored-bordered{
+  border: 2px solid ;
+  thead th {
+      border-bottom: 0 !important;
+      color: $white;
+  }
+}
+
+// Table background
+
+.table-background {
+  color: $white;
+
+  thead {
+    th {
+      border-bottom: 0;
+    }
+  }
+  tbody {
+    td,th {
+      border: 0;
+    }
+    tr{
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .table-bordered-#{$color} {
+      border-color: $value;
+      thead{
+          th{
+              background-color: $value;
+          }
+      }
+  }
+
+  .table-background-#{$color} {
+      background-color: rgba($value, 0.8);
+    
+      thead {
+        th {
+          background-color: $value;
+        }
+      }
+      tbody {
+        tr{
+          &:hover {
+            background-color: $value;
+          }
+        }
+      }
+  }
+}
+
+

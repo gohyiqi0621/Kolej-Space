@@ -1,0 +1,14 @@
+// 
+// animate.scss
+//
+
+.demo-animation {
+    img {
+        position: relative;
+        width: 120px;
+        display: block;
+        margin: 0 auto 40px auto;
+        z-index: 1;
+        border-radius: 2px;
+      }
+}

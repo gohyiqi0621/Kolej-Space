@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Zircos - Responsive Admin Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Topbar Start -->
+                <div class="navbar-custom">
+                    <a href="index.html" class="logo text-center d-none d-md-inline-block mr-2">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="16">
+                        </span>
+                    </a>
+
+                    <button type="button" class="btn btn-sm btn-dark d-inline-block d-lg-none button-menu-mobile">Menu</button>
+    
+                    <span class="badge badge-danger float-right mt-1">v3.0.0</span>
+                </div>
+                <!-- end Topbar -->
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <div class="page-wrapper">
+                        <div class="left-sidebar">
+                            <div class="slimscroll-menu">
+                                <div class="list-group list-group-transparent mb-0">
+
+                                    <span class="list-group-item disabled">
+                                        Getting Started
+                                    </span>
+
+                                    <a href="index.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-flag-variant-outline"></i>
+                                        </span>Introduction
+                                    </a>
+
+                                    <a href="setup.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-apps"></i>
+                                        </span>Setup
+                                    </a>
+
+                                    <a href="customization.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-square-edit-outline"></i>
+                                        </span>Customization
+                                    </a>
+
+                                    <a href="plugins-uses.html" class="list-group-item list-group-item-action active">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-widgets"></i>
+                                        </span>How to use plugins
+                                    </a>
+
+                                    <span class="list-group-item disabled">
+                                        Layout
+                                    </span>
+
+                                    <a href="vertical.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-menu"></i>
+                                        </span>Vertical Layouts
+                                    </a>
+
+                                    <a href="horizontal.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-page-layout-sidebar-left"></i>
+                                        </span>Horizontal Layouts
+                                    </a>
+
+                                    <a href="dark.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-briefcase-outline"></i>
+                                        </span>Dark Version
+                                    </a>
+
+                                    <a href="rtl.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-page-layout-sidebar-left"></i>
+                                        </span>RTL Version
+                                    </a>
+
+                                    <span class="list-group-item disabled">
+                                        Other
+                                    </span>
+
+                                    <a href="changelog.html" class="list-group-item list-group-item-action ">
+                                        <span class="mr-2">
+                                            <i class="mdi mdi-book-open-page-variant"></i>
+                                        </span>Changelog
+                                    </a>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end left-sidebar-->
+
+                        <div class="page-content">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="p-lg-1">
+                                        <h3 class="mt-0 mb-2 font-weight-bold">Plugin's usage information</h3>
+                                        <hr/>
+                                        <p>
+                                            We are using multiple awesome plugins (optional) to build out the application pages and others. The following table is describing the necessary assets to include in your html if you are looking to use the same.
+                                        </p>
+                                    </div>
+
+                                    <div class="p-lg-1 mt-1">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered m-0">
+                                                        
+                                                <thead>
+                                                    <tr>
+                                                        <th>Page / App</th>
+                                                        <th style="width: 32%;">Plugin CSS</th>
+                                                        <th style="width: 32%;">Plugin js</th>
+                                                        <th>Custom js</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Modals</td>
+                                                        <td>custombox.min.css</td>
+                                                        <td>custombox.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Notifications</td>
+                                                        <td>toastr.min.css</td>
+                                                        <td>toastr.min.js</td>
+                                                        <td>toastr.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tooltips</td>
+                                                        <td>tooltipster.bundle.min.css</td>
+                                                        <td>tooltipster.bundle.min.jss</td>
+                                                        <td>tooltipster.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sweet Alert</td>
+                                                        <td>sweetalert2.min.css</td>
+                                                        <td>sweetalert2.min.js</td>
+                                                        <td>sweet-alerts.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Widgets</td>
+                                                        <td>sweetalert2.min.css</td>
+                                                        <td>moment.min.js, sweetalert2.min.js, jquery.scrollTo.min.js</td>
+                                                        <td>jquery.chat.js, jquery.todo.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nestable</td>
+                                                        <td>jquery.nestable.min.css</td>
+                                                        <td>jquery.nestable.min.js</td>
+                                                        <td>nestable.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Range Slider</td>
+                                                        <td>ion.rangeSlider.css</td>
+                                                        <td>ion.rangeSlider.min.js</td>
+                                                        <td>range-sliders.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Rating</td>
+                                                        <td>-</td>
+                                                        <td>jquery.raty-fa.js</td>
+                                                        <td>rating.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Animation</td>
+                                                        <td>animate.min.css</td>
+                                                        <td>-</td>
+                                                        <td>animate.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Calendar</td>
+                                                        <td>fullcalendar.min.css</td>
+                                                        <td>moment.min.js, jquery-ui.min.js, fullcalendar.min.js</td>
+                                                        <td>calendar.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms advanced - Bootstrap Taginput</td>
+                                                        <td>bootstrap-tagsinput.css</td>
+                                                        <td>bootstrap-tagsinput.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms advanced - Switchery</td>
+                                                        <td>switchery.min.css</td>
+                                                        <td>switchery.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms advanced - Multiselect</td>
+                                                        <td>multi-select.css</td>
+                                                        <td>jquery.multi-select.js, jquery.quicksearch.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms advanced - Select2</td>
+                                                        <td>select2.min.css</td>
+                                                        <td>select2.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms advanced - Autocomplete</td>
+                                                        <td>-</td>
+                                                        <td>jquery.autocomplete.min.js, jquery.mockjax.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms advanced - Bootstrap Select</td>
+                                                        <td>bootstrap-select.min.css</td>
+                                                        <td>bootstrap-select.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms advanced - Bootstrap Touchspin</td>
+                                                        <td>jquery.bootstrap-touchspin.min.css</td>
+                                                        <td>jquery.bootstrap-touchspin.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form advanced - Bootstrap MaxLength</td>
+                                                        <td>-</td>
+                                                        <td>bootstrap-maxlength.min.js</td>
+                                                        <td>form-advanced.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form advanced - Bootstrap filestyle2</td>
+                                                        <td>-</td>
+                                                        <td>bootstrap-filestyle.min.js/td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms validation - Parsley </td>
+                                                        <td>-</td>
+                                                        <td>parsley.min.js</td>
+                                                        <td>form-validation.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Pickers - Bootstrap Colorpicker</td>
+                                                        <td>bootstrap-colorpicker.min.css</td>
+                                                        <td>bootstrap-colorpicker.min.js</td>
+                                                        <td>form-pickers.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Pickers - Bootstrap Timepicker</td>
+                                                        <td>bootstrap-timepicker.min.css</td>
+                                                        <td>bootstrap-timepicker.min.js, moment.min.js</td>
+                                                        <td>form-pickers.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Pickers - Bootstrap Clockpicker</td>
+                                                        <td>bootstrap-clockpicker.min.css</td>
+                                                        <td>bootstrap-clockpicker.min.js</td>
+                                                        <td>form-pickers.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Pickers - Bootstrap Datepicker</td>
+                                                        <td>bootstrap-datepicker.min.css</td>
+                                                        <td>bootstrap-datepicker.min.js</td>
+                                                        <td>form-pickers.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Pickers - Bootstrap Daterangepicker</td>
+                                                        <td>daterangepicker.css</td>
+                                                        <td>daterangepicker.js</td>
+                                                        <td>form-pickers.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form Wizard</td>
+                                                        <td>-</td>
+                                                        <td>jquery.steps.min.js, jquery.validate.min.js</td>
+                                                        <td>form-wizard.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form mask</td>
+                                                        <td>-</td>
+                                                        <td>jquery.mask.min.js, autoNumeric-min.js</td>
+                                                        <td>form-masks.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Summernote</td>
+                                                        <td>summernote-bs4.css</td>
+                                                        <td>summernote-bs4.min.js</td>
+                                                        <td>form-summernote.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Quilljs Editor</td>
+                                                        <td>quill.core.css, quill.bubble.css, quill.snow.css</td>
+                                                        <td>katex.min.js, quill.min.js</td>
+                                                        <td>form-quilljs.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>File Uploads - Dropify</td>
+                                                        <td>dropify.min.css</td>
+                                                        <td>dropify.min.js</td>
+                                                        <td>form-fileuploads.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Datatables</td>
+                                                        <td>dataTables.bootstrap4.min.css, responsive.bootstrap4.min.css, buttons.bootstrap4.min.css, fixedHeader.bootstrap4.min.css, scroller.bootstrap4.min.css, dataTables.colVis.css, fixedColumns.bootstrap4.min.css</td>
+                                                        <td>jquery.dataTables.min.js, dataTables.bootstrap4.min.js, dataTables.responsive.min.js, responsive.bootstrap4.min.js, dataTables.buttons.min.js, buttons.bootstrap4.min.js, buttons.html5.min.js, buttons.print.min.js, dataTables.keyTable.min.js, dataTables.fixedHeader.min.js, dataTables.scroller.min.js, dataTables.fixedColumns.min.js, jszip.min.js, pdfmake.min.js, vfs_fonts.js</td>
+                                                        <td>datatables.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Responsive Table</td>
+                                                        <td>rwd-table.min.css</td>
+                                                        <td>rwd-table.min.js</td>
+                                                        <td>responsive-table.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tablesaw</td>
+                                                        <td>tablesaw.css</td>
+                                                        <td>tablesaw.js</td>
+                                                        <td>tablesaw.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Table Editable</td>
+                                                        <td>-</td>
+                                                        <td>jquery.tabledit.min.js</td>
+                                                        <td>tabledit.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Flot Charts</td>
+                                                        <td>-</td>
+                                                        <td>jquery.flot.js, jquery.flot.time.js, jquery.flot.tooltip.min.js, jquery.flot.resize.js, jquery.flot.pie.js, jquery.flot.selection.js, jquery.flot.stack.js, jquery.flot.orderBars.js, jquery.flot.crosshair.js, jquery.flot.axislabels.js</td>
+                                                        <td>flot.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Morris Charts</td>
+                                                        <td>-</td>
+                                                        <td>morris.min.js, raphael.min.js</td>
+                                                        <td>morris.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chartist Charts</td>
+                                                        <td>chartist.min.css</td>
+                                                        <td>chartist.min.js, chartist-plugin-tooltip.min.js</td>
+                                                        <td>chartist.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chart.js</td>
+                                                        <td>-</td>
+                                                        <td>Chart.bundle.min.js</td>
+                                                        <td>chartjs.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>C3 Charts</td>
+                                                        <td>c3.min.css</td>
+                                                        <td>c3.min.js, d3.min.js</td>
+                                                        <td>c3.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sparkline Charts</td>
+                                                        <td>-</td>
+                                                        <td>jquery.sparkline.min.js</td>
+                                                        <td>sparkline.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jquery Knob</td>
+                                                        <td>-</td>
+                                                        <td>jquery.knob.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Google Maps</td>
+                                                        <td>-</td>
+                                                        <td>gmaps.min.js</td>
+                                                        <td>gmaps.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vector Maps</td>
+                                                        <td>jquery-jvectormap-1.2.2.css</td>
+                                                        <td>
+                                                            jquery-jvectormap-1.2.2.min.js, jquery-jvectormap-world-mill-en.js, jquery-jvectormap-us-merc-en.js,
+                                                            jquery-jvectormap-in-mill-en.js, jquery-jvectormap-au-mill-en.js, jquery-jvectormap-us-il-chicago-mill-en.js,
+                                                            jquery-jvectormap-uk-mill-en.js, jquery-jvectormap-ca-lcc-en.js
+                                                        </td>
+                                                        <td>jvectormap.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mapael Maps</td>
+                                                        <td>-</td>
+                                                        <td>raphael.min.js, jquery.mapael.min.js, world_countries.min.js, usa_states.min.js</td>
+                                                        <td>mapael-map.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Extras - Profile</td>
+                                                        <td>-</td>
+                                                        <td>jquery.knob.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Extra Pages - Coming soon</td>
+                                                        <td></td>
+                                                        <td>jquery.countdown.min.js</td>
+                                                        <td>coming-soon.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Extra Pages - Gallery</td>
+                                                        <td>magnific-popup.css</td>
+                                                        <td>isotope.pkgd.min.js, jquery.magnific-popup.min.js</td>
+                                                        <td>gallery.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Add Blog</td>
+                                                        <td>dropify.min.css, select2.min.css, summernote-bs4.css</td>
+                                                        <td>select2.min.js, summernote-bs4.min.js, dropify.min.js</td>
+                                                        <td>blog-add.init.js</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Property List</td>
+                                                        <td>bootstrap-select.min.css</td>
+                                                        <td>bootstrap-select.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Property Column</td>
+                                                        <td>bootstrap-select.min.css</td>
+                                                        <td>bootstrap-select.min.js</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Add / Edit Property</td>
+                                                        <td>dropify.min.css</td>
+                                                        <td>dropify.min.js</td>
+                                                        <td>property-add.init.js</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end page-wrapper-->
+
+                    
+                </div>
+
+            </div>
+            <!-- content -->
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            2018 - 2020 © Zircos - by Coderthemes
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="http://coderthemes.com/" target="_blank">About</a>
+                                <a href="https://wrapbootstrap.com/user/coderthemes/message" target="_blank">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+
+    <!-- bundle -->
+    <script src="assets/js/app.min.js"></script>
+</body>
+
+</html>

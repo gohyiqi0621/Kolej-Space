@@ -1,0 +1,74 @@
+// 
+// nav.scss
+//
+
+.nav-tabs,.nav-pills {
+    > li {
+        > a {
+            color: $dark;
+            font-weight: $font-weight-medium;
+            &.active{
+                color: $primary;
+            }
+        }
+    }
+}
+
+.nav-pills {
+    > a {
+        font-weight: $font-weight-medium;
+        color: $dark;
+    }
+}
+
+
+//Navtab custom
+.navtab-bg {
+    li {
+        >a {
+            background-color: $gray-200;
+            margin: 0 5px;
+        }
+    }
+}
+
+.tab-content {
+    padding: 20px 0 0 0;
+}  
+
+/* Vertial tab */
+.tabs-vertical-env {
+
+    .nav.tabs-vertical {
+      .nav-link {
+        color: $dark;
+        text-align: center;
+        &.active{
+          background-color: $gray-200;
+          color: $primary;
+        }
+      }
+    }
+}
+
+
+
+// Nav bordered
+
+.tabs-bordered {
+    border-bottom: 2px solid rgba($text-muted, 0.2) !important;
+    .nav-item {
+        margin-bottom: -2px;
+    }
+
+    li {
+        a {
+            border: 0 !important;
+            padding: 10px 20px !important;
+            &.active {
+                border-bottom: 2px solid $primary !important;
+            }
+        }
+    }   
+}
+

@@ -1,0 +1,272 @@
+.about-wrapper .about-content .counter-box-items .counter-content {
+    border-left: 1px solid var(--border);
+    padding-left: 125px;
+    padding-right: 0;
+    border-right: 0;
+}
+
+.hero-1 .hero-image .rating-box img {
+    padding-right: 50px;
+    width: initial;
+    border-right: 1px solid var(--border);
+    padding-left: 0;
+    border-left: none;
+}
+
+.testimonial-slider, .testimonial-slider-2, .live-courses-slider, .courses-slider, .related-product-slider {
+    direction: ltr;
+}
+
+.brand-slider {
+    direction: ltr;
+}
+
+.header-main .main-menu ul li a i {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.cta-newsletter-wrapper .list-items li i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.news-box-items .news-content .link-btn i {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.footer-widget-wrapper .single-footer-widget .list-area li a::before {
+    right: 0;
+    left: initial;
+}
+
+.header-main .main-menu ul li a .head-icon {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.main-choose-us-wrapper .line-shape {
+    top: 86px;
+    transform: rotate(6deg);
+}
+
+.footer-widget-wrapper .single-footer-widget .list-area li a {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+.team-box-items .team-image .team-content {
+    left: 0;
+    direction: rtl;
+    right: 40px;
+}
+
+.submenu .has-dropdown a i {
+    transform: rotate(180deg);
+}
+
+.hero-2 .hero-image-items .hero-image .counter-box {
+    left: 0;
+    right: initial;
+}
+
+.hero-2 .hero-image-items .hero-image {
+    text-align: center;
+}
+
+.header-top .category-oneadjust .search-toggle-box .input-area .cmn-btn {
+    right: inherit;
+    left: 15px;
+}
+
+.event-box-items .accordion-single .button-list li i {
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+.choose-us-wrapper .choose-us-image::before {
+    left: initial;
+    right: initial;
+    left: -100px;
+}
+
+.choose-us-wrapper .choose-us-image {
+    z-index: 9;
+    margin-left: -50px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1199px) {
+    .choose-us-wrapper .choose-us-image {
+        margin-left: 0;
+    }
+}
+
+.faq-wrapper .faq-content {
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.faq-wrapper .faq-content .faq-items .accordion .accordion-item h2 button {
+    padding-right: 50px;
+    padding-left: 0;
+}
+
+.news-card-items .news-content .link-btn i {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+/* .footer-banner-items .footer-banner .thumb::before {
+    left: 0;
+    transform: initial;
+}
+
+.footer-banner-items .footer-banner .thumb {
+    margin-left: -50px;
+} */
+
+
+.courses-main-sidebar-area .courses-main-sidebar .courses-sidebar-items .search-widget form button {
+    right: inherit;
+    left: 20px;
+}
+
+.courses-card-main-items .courses-card-items .courses-content .post-class li i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.breadcrumb-wrapper.style-2 .page-heading .breadcrumb-content h1 {
+    text-align: right;
+}
+
+.courses-details-wrapper .courses-sidebar-area .courses-category-items ul li span i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.courses-details-wrapper .courses-sidebar-area .courses-category-items .share-btn i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.courses-details-wrapper .courses-details-items .courses-details-content .course-curriculum-items .courses-faq-items .accordion .accordion-item .accordion-body ul li span i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.courses-details-wrapper .courses-details-items .courses-details-content .course-curriculum-items .courses-faq-items .accordion .accordion-button::before {
+    right: initial;
+    left: 30px;
+    transform: rotate(180deg);
+}
+
+.breadcrumb-wrapper .page-heading .breadcrumb-items li:not(:last-child)::before {
+    right: initial;
+    left: -30px;
+}
+
+.courses-details-wrapper .courses-details-items .breadcrumb-content .courses-breadcrumb-items .client-image-items {
+    border-left: 1px solid var(--border);
+    border-right: none;
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+.news-area .main-sidebar .single-sidebar-widget .wid-title::before {
+    left: initial;
+    right: 0;
+}
+
+.news-area .main-sidebar .single-sidebar-widget .wid-title::after {
+    left: inherit;
+    right: 22px;
+}
+
+.news-area .main-sidebar .single-sidebar-widget .wid-title {
+    padding-left: 0;
+    padding-right: 45px;
+}
+
+.popular-posts .single-post-item .post-content .post-date i, .popular_posts .single-post-item .post-content .post-date i {
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+.widget_categories ul li a span {
+    right: initial;
+    left: 0;
+}
+
+.blog-wrapper .single-blog-post .post-content .post-meta span {
+    margin-right: 0;
+    margin-left: 25px;
+}
+
+.blog-wrapper .single-blog-post .post-content .post-meta span i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.search_widget form button {
+    right: initial;
+    left: 0;
+}
+
+.blog-wrapper .single-blog-post .post-content ul li::before {
+    left: initial;
+    right: 0;
+}
+
+.blog-wrapper .single-blog-post .post-content ul li {
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+.comments-item-list .single-comment-item .author-img {
+    float: right;
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.comments-item-list .single-comment-item .author-info-comment .info .theme-btn {
+    right: initial;
+    left: 0;
+}
+
+.comment-form .theme-btn i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.tagcloud a {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.courses-details-wrapper .courses-details-items .courses-details-content .description-content .list-item li i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.shop-details-wrapper .shop-details-items .details-content {
+    margin-left: 0;
+    margin-right: 70px;
+}
+
+.shop-details-wrapper .shop-details-items .details-content .list li i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+
+.shop-details-wrapper .single-tab .table-responsive .table tbody tr .text-1 {
+    padding: 18px 20px 18px 0px;
+}
+
+.shop-box-items .shop-content .price-list li:nth-child(2) i {
+    margin-right: 0;
+    margin-left: 8px;
+}

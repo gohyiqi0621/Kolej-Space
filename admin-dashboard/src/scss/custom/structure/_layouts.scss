@@ -1,0 +1,12 @@
+//
+// layouts.scss
+//
+
+@media (min-width: 992px) {
+    // Unsticky header
+    .unsticky-header {
+        #topnav,.navbar-custom {
+            position: absolute;
+        }
+    }
+}

@@ -1,0 +1,154 @@
+// 
+// Extras pages.scss
+//
+
+
+// profile
+ 
+.card-drop{
+  &:after{
+    display: none;
+  }
+}
+
+.member-card {
+  .member-thumb {
+    position: relative;
+  }
+  .member-star {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 16px;
+    background-color: $gray-200;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.social-links{
+  li {
+    a {
+      border-radius: 50%;
+      color: rgba($gray-500, 0.5);
+      display: inline-block;
+      height: 30px;
+      line-height: 26px;
+      border: 2px solid rgba($gray-500, 0.5);
+      text-align: center;
+      width: 30px;
+      font-size: 12px;
+      &:hover{
+        color: $gray-500;
+        border: 2px solid $gray-500;
+      }
+    }
+  }
+}
+
+
+// search result
+
+.search-result-box {
+  .tab-content {
+    padding: 30px 30px 10px 30px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+  }
+  .search-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba($text-muted, 0.2);
+    margin-bottom: 20px;
+  }
+}
+
+
+
+// pricing
+
+
+.card-pricing{
+    box-shadow: $box-shadow-sm;
+    .card-pricing-features{
+        li{
+            padding: 12px;
+        }
+    }
+    .card-price{
+        font-size: 48px;
+        font-weight: 300;
+    }
+    &.active{
+        margin: 0 -24px;
+        box-shadow: $box-shadow;
+    }
+}
+
+
+// coming soon
+
+.diamond {
+  margin: 50px auto;
+  height: 90px;
+  width: 120px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 44px;
+    background: rgba($dark,.1);
+    border-radius: 50%;
+    margin-top: 0;
+    margin-left: 38px;
+    z-index: 11;
+  }
+  .top {
+    height: 30px;
+    border-left: 27px solid transparent;
+    border-right: 27px solid transparent;
+    border-bottom: 24px solid lighten($success, 4%);
+    &:after {
+      content: "";
+      position: absolute;
+      height: 24px;
+      width: 32px;
+      margin-top: 6px;
+      margin-left: 47px;
+      background: $success;
+      -ms-transform: skew(30deg, 20deg);
+      -webkit-transform: skew(30deg, 20deg);
+      transform: skew(48deg);
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      height: 24px;
+      width: 32px;
+      margin-top: 7px;
+      margin-left: -13px;
+      background: $success;
+      transform: skew(-48deg);
+    }
+  }
+  .bot {
+    height: 60px;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 60px solid lighten($success, 4%);
+    &:before {
+      content: "";
+      position: absolute;
+      height: 60px;
+      margin-top: -60px;
+      margin-left: -27px;
+      border-left: 27px solid transparent;
+      border-right: 26px solid transparent;
+      border-top: 60px solid $success;
+    }
+  }
+}

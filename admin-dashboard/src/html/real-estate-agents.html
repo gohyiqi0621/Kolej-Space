@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Agents | Zircos - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Responsive bootstrap 4 admin template" name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <link href="assets/libs/custombox/custombox.min.css" rel="stylesheet" type="text/css">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+
+    </head>
+
+    <body data-layout="horizontal">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            @@include('./partials/horizontal-nav.html')
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Zircos</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Real Estate </a></li>
+                                            <li class="breadcrumb-item active">Agents</li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Agents</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card-box">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <form>
+                                                <div class="form-group search-box">
+                                                    <input type="text" id="search-input" class="form-control product-search" placeholder="Search here...">
+                                                    <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <a href="#custom-modal" class="btn btn-success btn-rounded btn-md waves-effect waves-light mb-4" data-animation="fadein" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a"><i class="md md-add"></i> Add New Agent</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover agents-mails-checkbox m-0  table-centered table-actions-bar">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 50px;">
+                                                        <div class="checkbox checkbox-primary checkbox-single mr-3 ml-1">
+                                                            <input id="action-checkbox" type="checkbox">
+                                                            <label for="action-checkbox"></label>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="btn-group dropdown ml-2">
+                                                            <button type="button" class="btn btn-light btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-chevron-down"></i></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="#" class="dropdown-item">Action</a></li>
+                                                                <li><a href="#" class="dropdown-item">Another action</a></li>
+                                                                <li><a href="#" class="dropdown-item">Something else here</a></li>
+                                                                <li class="dropdown-divider"></li>
+                                                                <li><a href="#" class="dropdown-item">Separated link</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </th>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>Contact No.</th>
+                                                    <th>Listed Properties</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr class="active">
+                                                    <td>
+                                                        <div class="checkbox checkbox-primary checkbox-single mr-3 ml-1">
+                                                            <input id="checkbox2" type="checkbox" checked="">
+                                                            <label for="checkbox2"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <img src="assets/images/users/avatar-2.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                    </td>
+
+                                                    <td>
+                                                        Tomaslau
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#">tomaslau@email.com</a>
+                                                    </td>
+
+                                                    <td>
+                                                        987-654-3210
+                                                    </td>
+                                                    <td>
+                                                        256
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-pencil-box-outline text-success"></i></a>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-close-box-outline text-danger"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox checkbox-primary checkbox-single mr-3 ml-1">
+                                                            <input id="checkbox1" type="checkbox">
+                                                            <label for="checkbox1"></label>
+                                                        </div>
+
+                                                    </td>
+
+                                                    <td>
+                                                        <img src="assets/images/users/avatar-1.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                    </td>
+
+                                                    <td>
+                                                        Chadengle
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#">chadengle@email.com</a>
+                                                    </td>
+
+                                                    <td>
+                                                        123-456-7890
+                                                    </td>
+                                                    <td>
+                                                        35
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-pencil-box-outline text-success"></i></a>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-close-box-outline text-danger"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox checkbox-primary checkbox-single mr-3 ml-1">
+                                                            <input id="checkbox3" type="checkbox">
+                                                            <label for="checkbox3"></label>
+                                                        </div>
+
+                                                    </td>
+                                                    <td>
+                                                        <img src="assets/images/users/avatar-3.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                    </td>
+
+                                                    <td>
+                                                        Stillnotdavid
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#">stillnotdavid@email.com</a>
+                                                    </td>
+
+                                                    <td>
+                                                        987-654-3210
+                                                    </td>
+                                                    <td>
+                                                        325
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-pencil-box-outline text-success"></i></a>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-close-box-outline text-danger"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox checkbox-primary checkbox-single mr-3 ml-1">
+                                                            <input id="checkbox4" type="checkbox">
+                                                            <label for="checkbox4"></label>
+                                                        </div>
+
+                                                    </td>
+                                                    <td>
+                                                        <img src="assets/images/users/avatar-4.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                    </td>
+
+                                                    <td>
+                                                        Kurafire
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#">kurafire@email.com</a>
+                                                    </td>
+
+                                                    <td>
+                                                        123-456-7890
+                                                    </td>
+                                                    <td>
+                                                        5
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-pencil-box-outline text-success"></i></a>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-close-box-outline text-danger"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox checkbox-primary checkbox-single mr-3 ml-1">
+                                                            <input id="checkbox5" type="checkbox">
+                                                            <label for="checkbox5"></label>
+                                                        </div>
+
+                                                    </td>
+
+                                                    <td>
+                                                        <img src="assets/images/users/avatar-5.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                    </td>
+
+                                                    <td>
+                                                        Shahedk
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#">shahedk@email.com</a>
+                                                    </td>
+
+                                                    <td>
+                                                        987-654-3210
+                                                    </td>
+                                                    <td>
+                                                        85
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-pencil-box-outline text-success"></i></a>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-close-box-outline text-danger"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox checkbox-primary checkbox-single mr-3 ml-1">
+                                                            <input id="checkbox6" type="checkbox">
+                                                            <label for="checkbox6"></label>
+                                                        </div>
+
+                                                    </td>
+
+                                                    <td>
+                                                        <img src="assets/images/users/avatar-6.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                    </td>
+
+                                                    <td>
+                                                        Adhamdannaway
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#">adhamdannaway@email.com</a>
+                                                    </td>
+
+                                                    <td>
+                                                        123-456-7890
+                                                    </td>
+                                                    <td>
+                                                        25
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-pencil-box-outline text-success"></i></a>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-close-box-outline text-danger"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox checkbox-primary checkbox-single mr-3 ml-1">
+                                                            <input id="checkbox7" type="checkbox">
+                                                            <label for="checkbox7"></label>
+                                                        </div>
+
+                                                    </td>
+
+                                                    <td>
+                                                        <img src="assets/images/users/avatar-7.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                    </td>
+
+                                                    <td>
+                                                        Ok
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#">nicename@email.com</a>
+                                                    </td>
+
+                                                    <td>
+                                                        987-654-3210
+                                                    </td>
+                                                    <td>
+                                                        65
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-pencil-box-outline text-success"></i></a>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-close-box-outline text-danger"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox checkbox-primary checkbox-single mr-3 ml-1">
+                                                            <input id="checkbox8" type="checkbox">
+                                                            <label for="checkbox8"></label>
+                                                        </div>
+
+                                                    </td>
+
+                                                    <td>
+                                                        <img src="assets/images/users/avatar-8.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                    </td>
+
+                                                    <td>
+                                                        Arashasghari
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#">arashasghari@email.com</a>
+                                                    </td>
+
+                                                    <td>
+                                                        123-456-7890
+                                                    </td>
+                                                    <td>
+                                                        84
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-pencil-box-outline text-success"></i></a>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-close-box-outline text-danger"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox checkbox-primary checkbox-single mr-3 ml-1">
+                                                            <input id="checkbox9" type="checkbox">
+                                                            <label for="checkbox9"></label>
+                                                        </div>
+
+                                                    </td>
+                                                    <td>
+                                                        <img src="assets/images/users/avatar-9.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                    </td>
+
+                                                    <td>
+                                                        Joshaustin
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#">joshaustin@email.com</a>
+                                                    </td>
+
+                                                    <td>
+                                                        987-654-3210
+                                                    </td>
+                                                    <td>
+                                                        78
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-pencil-box-outline text-success"></i></a>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-close-box-outline text-danger"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox checkbox-primary checkbox-single mr-3 ml-1">
+                                                            <input id="checkbox10" type="checkbox">
+                                                            <label for="checkbox10"></label>
+                                                        </div>
+
+                                                    </td>
+
+                                                    <td>
+                                                        <img src="assets/images/users/avatar-10.jpg" alt="contact-img" title="contact-img" class="rounded-circle avatar-sm" />
+                                                    </td>
+
+                                                    <td>
+                                                        Sortino
+                                                    </td>
+
+                                                    <td>
+                                                        <a href="#">sortino@email.com</a>
+                                                    </td>
+
+                                                    <td>
+                                                        123-456-7890
+                                                    </td>
+                                                    <td>
+                                                        85
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-pencil-box-outline text-success"></i></a>
+                                                        <a href="#" class="table-action-btn h3"><i class="mdi mdi-close-box-outline text-danger"></i></a>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- end table responsive -->
+                                </div>
+                                <!-- end card-box -->
+
+                                <div>
+                                    <ul class="pagination pagination-split justify-content-end">
+                                        <li class="page-item disabled">
+                                            <a href="#" class="page-link"><i class="fa fa-angle-left"></i></a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">1</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="#" class="page-link">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link"><i class="fa fa-angle-right"></i></a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                            <!-- end col -->
+
+                        </div>
+                        <!-- end row -->
+
+                    </div>
+                    <!-- end container-fluid -->
+
+                </div>
+                <!-- end content -->
+
+                @@include('./partials/footer.html')
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        <!-- Modal -->
+        <div id="custom-modal" class="modal-demo">
+            <button type="button" class="close" onclick="Custombox.modal.close();">
+                <span>&times;</span><span class="sr-only">Close</span>
+            </button>
+            <h4 class="custom-modal-title">Add New Agent</h4>
+            <div class="custom-modal-text text-left">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="position">Contact number</label>
+                        <input type="text" class="form-control" id="position" placeholder="Enter number">
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary waves-effect waves-light">Save</button>
+                    <button type="button" class="btn btn-danger waves-effect waves-light ml-2">Cancel</button>
+                </form>
+            </div>
+        </div>
+
+        @@include('./partials/right-sidebar.html')
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <script src="assets/libs/custombox/custombox.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+
+    </body>
+
+</html>

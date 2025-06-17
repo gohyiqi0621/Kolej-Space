@@ -1,0 +1,203 @@
+// 
+// plugins-rtl.scss
+//
+
+// custombox modal
+
+.custom-modal-title{
+    text-align: right;
+}
+
+.modal-demo {
+    .close{
+        left: 25px;
+        right: auto;
+    }
+}
+
+// flot chart
+
+.legendLabel {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+// Bootstrap select
+
+.bootstrap-select {
+    .dropdown-toggle {
+        &:before {
+            float: left;
+        }
+
+        .filter-option {
+            text-align: right;
+        }
+
+        .filter-option-inner {
+            padding-right: 0;
+            padding-left: inherit;
+        }
+    }
+}
+
+// Select 2
+
+.select2-container {
+    .select2-selection--single {
+        .select2-selection__rendered {
+            padding-right: 12px;
+        }
+
+        .select2-selection__arrow {
+            left: 3px;
+            right: auto;
+        }
+    }
+
+    .select2-selection--multiple {
+        .select2-selection__choice {
+            float: right;
+            margin-left: 5px;
+            margin-right: 0;
+        }
+    }
+
+    .select2-search--inline {
+        float: right;
+    }
+}
+
+// Multiple select
+
+.ms-container {
+    .ms-optgroup-label {
+        padding: 5px 5px 0px 0;
+    }
+}
+
+// X-ediatable 
+
+.editable-buttons {
+    margin-left: 0;
+    margin-right: 7px;
+
+    .editable-cancel {
+        margin-left: 0;
+        margin-right: 7px;
+    }
+}
+
+// Parsley
+.parsley-errors-list {
+    >li {
+        padding-left: 0;
+        padding-right: 20px;
+
+        &:before {
+            left: auto;
+            right: 2px;
+        }
+    }
+}
+
+// wizard
+
+.wizard{
+    >.steps {
+        .number {
+            right: 10px;
+            left: auto;;
+        }
+    }
+}
+
+// Quilljs
+
+.ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+    left: 0;
+    right: auto;
+}
+
+.ql-editor {
+    direction: rtl;
+    text-align: right;
+}
+
+// ---------   tables    -----------//
+     
+
+// datatable
+
+.dataTables_wrapper {
+    .dataTables_filter{
+        text-align: left !important;
+        input{
+            margin-left: 0px !important;
+            margin-right: 0.5em;
+        }
+    }
+}
+
+.dataTables_length, .dt-buttons, #datatable-colvid_info{
+    float: right;
+}
+
+div{
+    &.ColVis{
+        margin-right: 0;
+        margin-left: 30px;
+    }
+}
+
+button.ColVis_Button{
+    margin-right: 0;
+    margin-right: 3px;
+}
+
+ul.ColVis_collection {
+    li {
+        span{
+            padding-left: 0;
+            padding-right: 0.5em;
+        }
+    }
+}
+
+// Responsive Table
+
+.table-rep-plugin {
+    .btn-group.pull-right {
+        float: left;
+    }
+    .checkbox-row {
+        label{
+            &:after{
+                margin-left: -22px;
+                top: -2px;
+            }
+        }
+    }
+}
+
+// tablesaw
+
+.tablesaw-columntoggle-popup {
+    .tablesaw-btn-group {
+        > label {
+            input{
+                margin-right: 0;
+                margin-left: .8em;
+            }
+        }
+    }
+}
+
+.tablesaw-bar {
+    .tablesaw-bar-section {
+        .tablesaw-btn{
+            margin-left: 0;
+            margin-right: .4em;
+        }
+    }
+}

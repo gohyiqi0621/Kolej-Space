@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<< Header Area >>-->
+    <head>
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="modinatheme">
+        <meta name="description" content="Eduspace - Online Course, Education & University Html Template">
+        <!-- ======== Page title ============ -->
+        <title>Kolej Space - Calendar</title>
+        <!--<< Favicon >>-->
+        <link rel="shortcut icon" href="assets/img/kolejspace.png">
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--<< Font Awesome.css >>-->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!--<< Odometer.css >>-->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--<< Style.css >>-->
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>
+
+    <style>
+    /* Import Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap');
+
+    /* Container and Section Styling */
+    .shop-section {
+        background: #f5f5f5; /* Soft ivory background */
+    }
+
+    .section-padding {
+        padding: 100px 0; /* Increased padding for a luxurious feel */
+    }
+
+    /* Calendar Section Styling */
+    .section-title {
+        font-size: 3.5em;
+        color: #1a237e; /* Navy blue to match UTMSPACE header */
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(to right, #f0e6d2, #d4af37); /* Champagne gold to deep gold gradient */
+        border-radius: 2px;
+    }
+
+    .calendar-container {
+        background: linear-gradient(135deg, #ffffff 0%, #f0e6d2 100%); /* Champagne gold gradient */
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 0 15px rgba(240, 230, 210, 0.3); /* Soft shadow with champagne tint */
+        padding: 40px;
+        max-width: 100%;
+        overflow: hidden;
+        border: 2px solid #d4af37; /* Deep gold border */
+    }
+
+    #calendar {
+        width: 100%;
+    }
+
+    .fc {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .fc .fc-toolbar {
+        background: #1a237e; /* Navy blue to match UTMSPACE header */
+        padding: 20px;
+        border-radius: 15px 15px 0 0;
+        margin-bottom: 0;
+    }
+
+    .fc .fc-toolbar-title {
+        font-size: 2em;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+    }
+
+    .fc .fc-button {
+        background: #d4af37; /* Deep gold buttons */
+        border: none;
+        color: #1a237e;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .fc .fc-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 3px 15px rgba(212, 175, 55, 0.6); /* Gold glow */
+    }
+
+    .fc .fc-daygrid-day {
+        background: #ffffff;
+        transition: background 0.2s, box-shadow 0.2s;
+    }
+
+    .fc .fc-daygrid-day:hover {
+        background: #f0e6d2; /* Champagne gold hover */
+        box-shadow: inset 0 0 5px rgba(240, 230, 210, 0.5);
+    }
+
+    .fc .fc-event {
+        background: #d4af37; /* Deep gold for events */
+        border: none;
+        color: #1a237e;
+        font-size: 1em;
+        padding: 4px 8px;
+        border-radius: 5px;
+        font-weight: 500;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    
+
+    /* SweetAlert2 Custom Styles */
+    .swal-popup {
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2), 0 0 20px rgba(240, 230, 210, 0.3);
+        padding: 30px;
+        background: linear-gradient(135deg, #ffffff 0%, #f0e6d2 100%); /* Champagne gold gradient */
+        border: 2px solid #d4af37; /* Deep gold border */
+    }
+
+    .swal-popup.error-popup {
+        background: linear-gradient(135deg, #ffffff 0%, #ffcccb 100%); /* Soft red gradient */
+        border: 2px solid #8b0000; /* Deep red border */
+    }
+
+    .swal-title {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: #1a237e; /* Navy blue */
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 1px;
+    }
+
+    .swal-content {
+        font-size: 1.2em;
+        color: #424242;
+        line-height: 1.8;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .swal-content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .swal-content li {
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 25px;
+    }
+
+    .swal-content li::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: #d4af37; /* Deep gold bullet */
+        font-size: 1.5em;
+        top: -2px;
+    }
+
+    .swal-button {
+        padding: 15px 40px;
+        border-radius: 10px;
+        font-size: 1.1em;
+        font-weight: 500;
+        background: #d4af37; /* Deep gold button */
+        color: #1a237e;
+        transition: transform 0.2s, box-shadow 0.2s;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .swal-button.error-button {
+        background: #8b0000; /* Deep red for error button */
+        color: #ffffff;
+    }
+
+    .swal-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(212, 175, 55, 0.7); /* Gold glow */
+    }
+
+    .swal-button.error-button:hover {
+        box-shadow: 0 4px 20px rgba(139, 0, 0, 0.7); /* Red glow */
+    }
+
+    .swal-footer {
+        font-size: 1em;
+        padding: 20px 0;
+        border-top: 2px solid rgba(212, 175, 55, 0.4); /* Gold border */
+    }
+
+    .swal-footer a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #d4af37; /* Deep gold link */
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .swal-footer a.error-link {
+        color: #8b0000; /* Deep red link */
+    }
+
+    .swal-footer a:hover {
+        text-decoration: underline;
+        text-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+    }
+
+    /* Animate.css integration */
+    .animate__animated {
+        animation-duration: 0.6s;
+    }
+
+    .animate__bounceIn {
+        animation-name: bounceIn;
+    }
+
+    .animate__shakeX {
+        animation-name: shakeX;
+    }
+
+    .animate__fadeOut {
+        animation-name: fadeOut;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+        .section-title {
+            font-size: 2.5em;
+        }
+
+        .calendar-container {
+            padding: 20px;
+        }
+
+        .fc .fc-toolbar-title {
+            font-size: 1.5em;
+        }
+
+        .fc .fc-button {
+            padding: 8px 15px;
+        }
+
+        .swal-popup {
+            width: 90%;
+            padding: 20px;
+        }
+
+        .swal-title {
+            font-size: 2em;
+        }
+
+        .swal-content {
+            font-size: 1em;
+        }
+
+        .swal-button {
+            padding: 12px 30px;
+        }
+    }
+
+    .header-main {
+        justify-content: flex-start !important;
+    }
+
+    </style>
+
+    <body>
+
+         <!-- Preloader Start -->
+         <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="edu-preloader-icon"> 
+                    <img src="assets/img/preloader.gif" alt="">               
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="K" class="letters-loading">
+                        K
+                    </span>
+                    <span data-text-preloader="O" class="letters-loading">
+                        O
+                    </span>
+                    <span data-text-preloader="L" class="letters-loading">
+                        L
+                    </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                    <span data-text-preloader="J" class="letters-loading">
+                        J
+                    </span>
+                    <span data-text-preloader="S" class="letters-loading">
+                        S
+                    </span>
+                    <span data-text-preloader="P" class="letters-loading">
+                        P
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="C" class="letters-loading">
+                        C
+                    </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                </div>
+                <p class="text-center">Loading</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fas fa-long-arrow-up"></i>
+        </button>
+        
+        <!-- Marquee Section Start -->
+        <div class="marquee-section style-header">
+            <div class="mycustom-marque header-marque theme-blue-bg">
+                <div class="scrolling-wrap">
+                    <div class="comm">
+                        <div></div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                    </div>
+                    <div class="comm">
+                        <div></div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                    </div>
+                    <div class="comm">
+                        <div></div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-1">
+            <div class="container-fluid">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img src="assets/img/kolejspace+utmspace.png" alt="logo-img" height="50px">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-between align-items-center">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="has-dropdown menu-thumb">
+                                                <a href="index-3.php">
+                                                    <span class="head-icon"><i class="fas fa-home-lg"></i></span>
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="courses.php">
+                                                    <span class="head-icon"><i class="fas fa-book"></i></span>
+                                                    Courses
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="event.php">
+                                                    <span class="head-icon"><i class="fas fa-gift"></i></span>
+                                                    Events
+                                                </a>
+                                            </li>
+                                            <li class="has-dropdown">
+                                                <a href="news-details.html">
+                                                    <span class="head-icon"><i class="fas fa-file-alt"></i></span>
+                                                    Info
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </a>
+                                                <ul class="submenu">
+                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="instructor.php">Instructors</a></li>
+                                                    <li><a href="faq.html">Faqs</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="calendar.html">
+                                                    <span class="head-icon"><i class="fas fa-layer-group"></i></span>
+                                                    Calendar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">
+                                                    <span class="head-icon"><i class="fas fa-phone-rotary"></i></span>
+                                                    Contact
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="header-button" style="margin-left: 120px;">
+                                <a href="sign-in.html" class="theme-btn yellow-btn">Sign In</a>
+                            </div>
+                        </div>
+            </div>
+        </header>
+
+        <!-- Search Section Start -->
+        <div class="header-search-bar d-flex align-items-center">
+            <button class="search-close">×</button>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="search-bar">
+                            <div class="contact-form-box contact-search-form-box">
+                                <form action="#">
+                                    <input type="email" placeholder="Search here...">
+                                    <button type="submit"><i class="far fa-search"></i></button>
+                                </form>
+                                <p>Type above and press Enter to search. Press Close to cancel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breadcrumb-wrapper Start -->
+        <section class="breadcrumb-wrapper shop-page-banner">
+            <div class="shape-1">
+                <img src="assets/img/breadcrumb/shape-1.png" alt="img">
+            </div>
+            <div class="shape-2">
+                <img src="assets/img/breadcrumb/shape-2.png" alt="img">
+            </div>
+            <div class="shape-3">
+                <img src="assets/img/breadcrumb/shape-3.png" alt="img">
+            </div>
+            <div class="dot-shape">
+                <img src="assets/img/breadcrumb/dot-shape.png" alt="img">
+            </div>
+            <div class="vector-shape">
+                <img src="assets/img/breadcrumb/Vector.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="page-heading">
+                        <h1>Academic Calendar</h1>
+                        <ul class="breadcrumb-items">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="style-2">Calendar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Academic Calendar 2025</h2>
+                <div id="calendar" class="calendar-container"></div>
+            </div>
+        </section>
+
+        <!-- Marquee Section Start -->
+        <div class="marquee-section">
+            <div class="mycustom-marque theme-green-bg-1">
+                <div class="scrolling-wrap">
+                    <div class="comm">
+                        <div></div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                    </div>
+                    <div class="comm">
+                        <div></div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                    </div>
+                    <div class="comm">
+                        <div></div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                        <div class="cmn-textslide text-color-2"><i class="flaticon-mortarboard"></i> Innovative Education UTM Tradition</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section Start -->
+        <footer class="footer-section-3 fix">
+            <div class="circle-shape">
+                <img src="assets/img/footer/circle.png" alt="img">
+            </div>
+            <div class="vector-shape">
+                <img src="assets/img/footer/Vector.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="footer-widget-wrapper style-2">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                    <a href="index.html">
+                                        <img src="assets/img/kolejspace.png" alt="img" height="120px">
+                                    </a>
+                                </div>
+                                <div class="footer-content">
+                                    <p>
+                                        Innovative Education, UTM Tradition
+                                    </p>
+                                    <div class="social-icon">
+                                        <a href="https://www.facebook.com/KolejSpace/"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/kolejspace/"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/company/kolej-space/"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                   <h3>Online Platform</h3>
+                                </div>
+                                <ul class="list-area">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="courses.html">Course</a></li>
+                                    <li><a href="event.php">Events</a></li>
+                                    <li><a href="instructor.php">Lecturer</a></li>
+                                    <li><a href="calendar.html">Calendar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="single-footer-widget style-left">
+                                <div class="widget-head">
+                                   <h3>Contact Us</h3>
+                                </div>
+                                <div class="footer-content">
+                                    <ul class="contact-info">
+                                        <li>
+                                            Level 2 (Podium), No. 8 Jalan Maktab, 54000 Kuala Lumpur
+                                        </li>
+                                        <li>
+                                            <a href="mailto:info@example.com" class="link">info@kolejspace.edu.my</a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+0001238899">+603 2772 2514</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="single-footer-widget">
+                                <div class="widget-head">
+                                   <h3>Newsletter</h3>
+                                </div>
+                                <div class="footer-content">
+                                    <p>Get the latest news delivered to you inbox</p>
+                                    <div class="footer-input">
+                                        <div class="icon">
+                                            <i class="far fa-envelope"></i>
+                                        </div>
+                                        <input type="email" id="email2" placeholder="Email Address">
+                                        <button class="newsletter-btn" type="submit">
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom style-3">
+                <div class="container">
+                    <div class="footer-bottom-wrapper">
+                        <p>Copyright © <a href="index.html">Kolej Space</a>, all rights reserved.</p>
+                        <ul class="footer-menu wow fadeInUp" data-wow-delay=".5s">
+                            <li>
+                                <a href="courses.html">
+                                    University 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="faq.html">
+                                    FAQs 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="event.html">
+                                    Events
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Nice Select Js >>-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--<< Odometer Js >>-->
+        <script src="assets/js/odometer.min.js"></script>
+        <!--<< Appear Js >>-->
+        <script src="assets/js/jquery.appear.min.js"></script>
+        <!--<< Swiper Slider Js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Circle Progress Js >>-->
+        <script src="assets/js/circle-progress.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/main.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="calendar.js"></script>
+    </body>
+</html>

@@ -1,0 +1,268 @@
+//
+// form-wizard.scss
+//
+
+
+.wizard{
+    // steps
+  
+    >.steps {
+        
+        position: relative;
+        display: block;
+        width: 100%;
+        >ul{
+            >li {
+                width: 25%;
+            }
+        }
+  
+        a{
+          font-size: 16px;
+          text-align: center;
+          margin: 0 0.5em 0.5em;
+          font-weight: bold;
+        }
+        .number {
+            font-size: 40px;
+            line-height: 76px;
+            position: absolute;
+            left: 16px;
+            top: -14px;
+            opacity: 0.1;
+        }
+  
+        a, a:hover, a:active{
+            display: block;
+            width: auto;
+            padding: 1em 1em;
+            text-decoration: none;
+            border-radius: 2px;
+        }
+  
+        .disabled{
+            a{
+              background: lighten($gray-200, 4%);
+              border: 1px solid $gray-200;
+              color: $dark;
+              cursor: default;
+              &:hover, &:active{
+                background: lighten($gray-200, 2%);
+                
+            }
+          }
+        }
+  
+        .current{
+            a, a:hover, a:active{
+                background: $primary;
+                color: $white;
+                cursor: default;
+                .number {
+                  color: $white;
+                  opacity: 0.4;
+                }
+            }
+        }
+  
+        .done{
+            a, a:hover, a:active{
+                background: $gray-200;
+                color: $dark;
+            }
+        }
+  
+        .error{
+            a, a:hover, a:active{
+                background: lighten($danger, 15%);
+                color: $white;
+                border-color: $danger;
+            }
+        }
+    }
+  
+    >.steps, >.actions{
+        >ul{
+            >li {
+                float: left;
+                position: relative;
+            }
+        }
+    }
+  
+    // content
+  
+    >.content {
+        display: block;
+        margin: 0.5em;
+        min-height: 240px;
+        overflow: hidden;
+        position: relative;
+        width: auto;
+        padding: 20px;
+        border: 1px solid $gray-200;
+        >.body {
+            padding: 0;
+            position: relative;
+  
+            ul {
+                list-style: disc !important;
+                >li {
+                    display: block;
+                    line-height: 30px;
+                }
+            }
+  
+            >iframe {
+                border: 0 none;
+                width: 100%;
+                height: 100%;
+            }
+  
+            input {
+                display: block;
+                border-color: $gray-300;
+  
+                &:focus {
+                    border-color: $gray-300;
+                }
+                &[type="checkbox"] {
+                    display: inline-block;
+                }
+  
+                &.error {
+                    background: lighten($danger, 15%);
+                    border: 1px solid $danger;
+                    color: $danger;
+                }
+            }
+  
+            label {
+                display: inline-block;
+                margin-bottom: 0.5em;
+                margin-top: 10px;
+                &.error {
+                    color: $danger;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+  
+    // actions
+  
+    >.actions {
+        position: relative;
+        display: block;
+        text-align: right;
+        width: 100%;
+        margin-top: 15px;
+        >ul {
+            display: inline-block;
+            text-align: right;
+            >li {
+                margin: 0 0.5em;
+            }
+        }
+  
+        a, a:hover, a:active{
+            background: $primary;
+            color: $white;
+            display: block;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-radius: 2px;
+        }
+  
+        .disabled{
+            a, a:hover, a:active{
+                background: lighten($gray-200, 4%);
+                color: $dark;
+            }
+        }
+    }
+  
+    // vertical wizard
+  
+    &.vertical{
+        >.steps {
+            display: inline;
+            float: left;
+            width: 30%;
+            >ul{
+                >li {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+  
+        > .content{
+          width: 65%;
+          margin: 0 2.5% 0.5em;
+          display: inline;
+          float: left;
+        }
+  
+        >.actions {
+            display: inline;
+            float: right;
+            width: 95%;
+            margin: 0 2.5%;
+            margin-top: 15px !important;
+            >ul{
+                >li {
+                    margin: 0 0 0 1em;
+                }
+            }
+        }
+    }  
+  }
+  
+  
+  
+  /*
+    Common 
+  */
+  
+  .wizard, .tabcontrol {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    a{
+        outline: 0;
+    }
+  
+    ul {
+        list-style: none !important;
+        padding: 0;
+        margin: 0;
+  
+        >li {
+            display: block;
+            padding: 0;
+        }
+    }
+  
+    /* Accessibility */
+  
+    >.steps {
+        .current-info {
+            position: absolute;
+            left: -999em;
+        }
+    }
+  
+    >.content{
+        >.title {
+            position: absolute;
+            left: -999em;
+        }
+    }
+  }
+  
+  @include media-breakpoint-down(sm) { 
+    .wizard > .steps > ul > li,.wizard.vertical > .steps,.wizard.vertical > .content {
+        width: 100%;
+    }
+  }

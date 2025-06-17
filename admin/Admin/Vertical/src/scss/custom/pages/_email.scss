@@ -1,0 +1,122 @@
+
+/* =============
+   Email
+============= */
+.mails {
+  .table-detail{
+    .email-msg {
+      color: $text-muted;
+    }
+    .email-name{
+      color: $text-muted;
+    }
+  }
+ 
+   td {
+     vertical-align: middle !important;
+     position: relative;
+     border: 0 !important;
+  }
+  td:last-of-type {
+    width: 100px;
+    padding-right: 20px;
+  }
+  tr:hover .text-white {
+    display: none;
+  }
+  .mail-select {
+    padding: 15px 20px;
+    min-width: 134px;
+  }
+  .checkbox {
+    margin-bottom: 0;
+    margin-top: -4px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 17px;
+    label {
+      min-height: 16px;
+    }
+  }
+
+  .mail-list {
+    .list-group-item {
+      background-color: transparent !important;
+      &.active {
+        background-color: $primary;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        background-clip: padding-box;
+      }
+    }
+  }
+  .unread a {
+    color: $dark;
+  }
+
+  .table-detail {
+    vertical-align: top;
+  }
+
+
+  /* chat-widget */
+  .chat-right-text {
+    overflow: hidden;
+  }
+  .chat-widget{
+    .chat-item {
+      overflow: hidden;
+      padding: 10px 0;
+      position: relative;
+      .chat-item-text {
+        color: $text-muted;
+        display: block;
+        font-size: 12px;
+        margin: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+      }
+      img {
+        width: 40px;
+      }
+      .chat-item-author {
+        color: $dark;
+        display: block;
+        margin: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+       
+      }
+      .chat-item-img {
+        display: block;
+        float: left;
+        margin-right: 15px;
+        width: 40px;
+        margin-top: 4px;;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 425px) {
+  .table-box {
+    .table-detail {
+      display: block;
+    }
+  }
+  .mails{
+    td:last-of-type{
+      width: 80px;
+      padding-right: 10px;
+    }
+  }
+  .mail-time{
+    display: none;
+  }
+}

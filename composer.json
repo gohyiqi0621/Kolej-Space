@@ -1,0 +1,9 @@
+{
+    "require": {
+        "stripe/stripe-php": "^17.3",
+        "mpdf/mpdf": "^8.2",
+        "setasign/fpdf": "^1.8",
+        "sendgrid/sendgrid": "^8.1",
+        "tecnickcom/tcpdf": "^6.8"
+    }
+}

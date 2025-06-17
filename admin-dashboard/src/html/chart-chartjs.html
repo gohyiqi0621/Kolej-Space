@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Chartjs Chart | Zircos - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Responsive bootstrap 4 admin template" name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+
+    </head>
+
+    <body data-layout="horizontal">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            @@include('./partials/horizontal-nav.html')
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Zircos</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Charts</a></li>
+                                            <li class="breadcrumb-item active">Chartjs</li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Chartjs</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card-box">
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+
+                                            <div class="demo-box">
+                                                <h4 class="header-title">Line Chart</h4>
+                                                <p class="sub-header">
+                                                    A line chart is a way of plotting data points on a line. Often, it is used to show trend data, and the comparison of two data sets.
+                                                </p>
+
+                                                <canvas id="lineChart" height="300"></canvas>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="demo-box mt-5 mt-lg-0">
+                                                <h4 class="header-title">Bar Chart</h4>
+                                                <p class="sub-header">
+                                                    A bar chart is a way of showing data as bars. It is sometimes used to show trend data, and the comparison of multiple data sets side by side.
+                                                </p>
+
+                                                <canvas id="bar" height="300"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+                                        <div class="col-lg-6 mt-2">
+                                            <div class="demo-box">
+                                                <h4 class="header-title">Pie Chart</h4>
+                                                <p class="sub-header">
+                                                    Pie and doughnut charts are probably the most commonly used chart there are. They are divided into segments, the arc of each segment shows the proportional value of each piece of data.
+                                                </p>
+
+                                                <canvas id="pie" height="260"></canvas>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+
+                                            <div class="demo-box mt-5 mt-lg-0">
+                                                <h4 class="header-title">Donut Chart</h4>
+                                                <p class="sub-header">
+                                                    Pie and doughnut charts are probably the most commonly used chart there are. They are divided into segments, the arc of each segment shows the proportional value of each piece of data.
+                                                </p>
+
+                                                <canvas id="doughnut" height="260"></canvas>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                    <div class="row mt-5">
+
+                                        <div class="col-lg-6 mt-2">
+
+                                            <div class="demo-box">
+                                                <h4 class="header-title">Polar area Chart</h4>
+                                                <p class="sub-header">
+                                                    Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value.
+                                                </p>
+
+                                                <canvas id="polarArea" height="300"> </canvas>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 mt-2">
+                                            <div class="demo-box mt-5 mt-lg-0">
+                                                <h4 class="header-title">Radar Chart</h4>
+                                                <p class="sub-header">
+                                                    A radar chart is a way of showing multiple data points and the variation between them. They are often useful for comparing the points of two or more different data sets.
+                                                </p>
+
+                                                <canvas id="radar" height="300"></canvas>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end row -->
+
+                                </div>
+                                <!-- card-box -->
+                            </div>
+                            <!-- end col-->
+
+                        </div>
+                        <!-- end row -->
+
+                    </div>
+                    <!-- end container-fluid -->
+
+                </div>
+                <!-- end content -->
+
+                @@include('./partials/footer.html')
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        @@include('./partials/right-sidebar.html')
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- Chart JS -->
+        <script src="assets/libs/chart-js/Chart.bundle.min.js"></script>
+
+        <script src="assets/js/pages/chartjs.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,52 @@
+// 
+// gallery.scss
+//
+
+.portfolioFilter {
+    a {
+        transition: all 0.3s ease-out;
+        color: $dark;
+        border-radius: 3px;
+        padding: 5px 10px;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: $font-weight-medium;
+        text-transform: uppercase;
+        &:hover {
+            color: $success;
+        }
+    }
+    a.current {
+        background-color: $success;
+        color: $white;
+    }
+}
+
+
+.gallery-box{
+    background-color: $card-bg;
+    margin-top: 24px;
+    border-radius: 4px;
+    overflow: hidden;
+    a {
+        display: block;
+        background-color: darken($dark, 20%);
+        overflow: hidden;
+      }
+
+      &:hover {
+        .thumb-img {
+          position: relative;
+          transform: scale(1.05);
+          opacity: 0.7;
+        }
+      }
+}
+  
+.thumb-img {
+    overflow: hidden;
+    width: 100%;
+    transition: all 0.2s ease-out;
+}
+
+

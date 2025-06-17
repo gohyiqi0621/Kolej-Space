@@ -1,0 +1,286 @@
+// 
+// topbar.scss
+//
+
+// Logo
+.logo {
+    display: block;
+    line-height: $topbar-height;
+    span.logo-lg {
+        display: block;
+    }
+    span.logo-sm {
+        display: none;
+    }
+    .logo-lg-text-dark {
+        color: $dark;
+        font-weight: $font-weight-bold;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    .logo-lg-text-light {
+        color: $white;
+        font-weight: $font-weight-bold;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+}
+
+.logo-box {
+    background-color: $bg-leftbar-dark;
+    height: $topbar-height;
+    width: $leftbar-width;
+    float: left;
+    transition: all .2s ease-out;
+}
+
+.navbar-custom {
+    background-color: $bg-topbar-light;
+    padding: 0 10px 0 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: $topbar-height;
+    z-index: 100;
+    box-shadow: $box-shadow;
+
+    .topnav-menu {
+        > li {
+            float: left;
+        }
+        .nav-link {
+            padding: 0 15px;
+            color: $gray-500;
+            min-width: 32px;
+            display: block;
+            line-height: $topbar-height;
+            text-align: center;
+            max-height: $topbar-height;
+        }
+    }
+
+    .dropdown.show {
+        .nav-link {
+            background-color: rgba($white,0.05);
+        }   
+    }
+
+
+    /* Search */
+    .app-search {
+        overflow: hidden;
+        height: $topbar-height;
+        display: table;
+        max-width: 180px;
+        margin-right: 20px;
+        
+        .app-search-box {
+            display: table-cell;
+            vertical-align: middle;
+
+            input::-webkit-input-placeholder {
+                font-size: 0.8125rem;
+                color: $gray-500;
+            }
+        }
+        .form-control {
+            border: none;
+            height: 38px;
+            padding-left: 20px;
+            padding-right: 0;
+            color: $gray-600;
+            background-color: rgba($gray-600, 0.09);
+            box-shadow: none;
+            border-radius: 30px 0 0 30px;
+        }
+        .input-group-append {
+            margin-left: 0;
+            z-index: 4;
+        }
+
+        .btn {
+            background-color: rgba($gray-600, 0.09);
+            color: $gray-500;
+            border-color: transparent;;
+            border-radius: 0 30px 30px 0;
+            box-shadow: none !important;
+        }
+    }
+
+    .button-menu-mobile {
+        border: none;
+        color: $gray-500;
+        display: inline-block;
+        height: $topbar-height;
+        line-height: $topbar-height;
+        width: 60px;
+        background-color: transparent;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .button-menu-mobile.disable-btn {
+        display: none;
+    }
+}
+
+
+/* Notification */
+.noti-scroll {
+    max-height: 230px;
+}
+
+.notification-list {
+    margin-left: 0;
+
+    .noti-title {
+        background-color: $gray-200;
+        padding: 15px 20px;
+        border-radius: 0.25rem 0.25rem 0 0;
+        margin-top: -8px;
+    }
+
+    .noti-icon {
+        font-size: 22px;
+    }
+
+    .noti-icon-badge {
+        display: inline-block;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+
+    .notify-item {
+        padding: 12px 20px;
+
+        
+        &.notify-all{
+            background-color: lighten($gray-200, 4%);
+            margin-bottom: -7px;
+        }
+
+        .notify-icon {
+            float: left;
+            height: 36px;
+            width: 36px;
+            font-size: 18px;
+            line-height: 36px;
+            text-align: center;
+            margin-top: 4px;
+            margin-right: 10px;
+            border-radius: 50%;
+            color: $white;
+        }
+
+        .notify-details {
+            margin-bottom: 5px;
+            overflow: hidden;
+            margin-left: 45px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $gray-800;
+            font-weight: $font-weight-medium;
+
+            b {
+                font-weight: 500;
+            }
+            small {
+                display: block;
+            }
+            span {
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 13px;
+            }
+
+        }
+        
+        .user-msg {
+            margin-left: 45px;
+            white-space: normal;
+            line-height: 16px;
+        }
+    }
+
+    .inbox-widget {
+        .inbox-item{
+            padding: 12px 20px;
+        }   
+    }
+
+    .profile-dropdown {
+        .notify-item {
+            padding: 7px 20px;
+        }
+    }
+}
+
+.profile-dropdown {
+    width: 170px;
+    i {
+        margin-right: 5px;
+        font-size: 16px;
+    }
+}
+
+.nav-user {
+    padding: 0 12px !important;
+    img {
+        height: 32px;
+        width: 32px;
+    }
+}
+
+// Responsive
+
+@media (min-width: 1025px){
+    .navbar-custom {
+        .button-menu-mobile{
+            margin-left: 8px;
+        }
+    }
+}
+
+// Topbar Navbar light
+
+.topbar-light{
+    .navbar-custom {
+        background-color: $bg-topbar-light;
+        box-shadow: $leftbar-width 1px 0 0 $gray-200;
+    
+        .topnav-menu{
+            .nav-link {
+                color: $gray-600;
+            }
+        }
+
+        .notification-list {
+            .noti-icon-badge{
+                border-color: $bg-topbar-light;
+            }
+        }
+    
+        .button-menu-mobile{
+            color: $gray-600;
+        }
+    
+        /* app search */
+        .app-search {
+            input::-webkit-input-placeholder {
+                color: $gray-600 !important;
+            }
+            .form-control {
+                color: $dark;
+                background-color: darken($bg-topbar-light, 4%);
+                border-color: darken($bg-topbar-light, 4%);
+            }
+            .btn {
+                background-color: darken($bg-topbar-light, 4%);
+                color: $gray-500;
+            }
+        }
+    }
+}

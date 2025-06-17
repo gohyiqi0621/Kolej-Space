@@ -1,0 +1,209 @@
+// 
+// widgets.scss
+//
+
+/* Inbox-widget */
+
+.inbox-widget {
+    .inbox-item {
+    border-bottom: 1px solid rgba($gray-200, 0.9);
+      overflow: hidden;
+      padding: 10px 0;
+      position: relative;
+      .inbox-item-img {
+        display: block;
+        float: left;
+        margin-right: 15px;
+        width: 40px;
+        margin-top: 4px;
+      }
+      img {
+        width: 40px;
+      }
+      .inbox-item-author {
+        color: $dark;
+        display: block;
+        margin: 0;
+        font-weight: $font-weight-semibold;
+        font-size: 15px;
+      }
+      .inbox-item-text {
+        color: $text-muted;
+        display: block;
+        font-size: 14px;
+        margin: 0;
+      }
+      .inbox-item-date {
+        color: $text-muted;
+        font-size: 11px;
+        position: absolute;
+        right: 7px;
+        top: 12px;
+      }
+    }
+  }
+
+  // widget-one
+  .widget-box-one{
+    .widget-icon{
+      border: 2px solid;
+    }
+  }
+
+  // widget-two  widgets Real Estate 
+
+.tilebox-two{
+  border-left: 4px solid;
+  i{
+    font-size: 50px;
+    color: rgba($dark, 0.3);
+
+  }
+}
+  
+// widgets-three
+  .widget-box-three {
+    i{
+      color:$gray-300;
+    }
+    .bg-icon {
+      border: 1px dashed $text-muted;
+      background-color: lighten($gray-300, 4%);
+      line-height: 68px;
+      text-align: center;
+    }
+  }
+
+@media (max-width: 420px) {
+  .hide-phone {
+    display: none !important;
+  }
+}
+
+
+
+/* Chat widget */
+
+.conversation-list {
+  list-style: none;
+  height: 332px;
+  padding: 0 20px;
+  li {
+      margin-bottom: 24px;
+  }
+  .chat-avatar {
+      float: left;
+      text-align: center;
+      width: 42px;
+      img {
+          border-radius: 100%;
+          width: 100%;
+      }
+      i {
+          font-size: 12px;
+          font-style: normal;
+      }
+  }
+  .ctext-wrap {
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      background: lighten($gray-300, 5%);
+      border-radius: 3px;
+      display: inline-block;
+      padding: 12px;
+      position: relative;
+      i {
+          display: block;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: bold;
+          position: relative;
+      }
+      p {
+          margin: 0;
+          padding-top: 3px;
+      }
+      &:after {
+          right: 99%;
+          top: 0;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-top-color: lighten($gray-300, 5%);
+          border-width: 8px;
+          margin-left: -1px;
+          border-right-color: lighten($gray-300, 5%);
+      }
+  }
+  .conversation-text {
+      float: left;
+      font-size: 12px;
+      margin-left: 12px;
+      width: 70%;
+  }
+  .odd {
+      .chat-avatar {
+          float: right !important;
+      }
+      .conversation-text {
+          float: right !important;
+          margin-right: 12px;
+          text-align: right;
+          width: 70% !important;
+      }
+      .ctext-wrap {
+        background-color: $danger;
+        color: $white;
+          &:after {
+              border-color: transparent;
+              border-left-color: $danger !important;
+              border-top-color: $danger !important;
+              left: 99% !important;
+          }
+      }
+  }
+}
+
+
+/* Todos widget */
+
+#todo-message {
+  font-size: 16px;
+}
+
+.todo-list {
+  li {
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    padding: 1px;
+    color: $text-muted;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+    .checkbox {
+      padding-left: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.todo-send {
+  padding-left: 0;
+}
+
+/* Avatar box */
+.avatar-sm-box {
+  height: 32px;
+  width: 32px;
+  color: $white;
+  display: block;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 16px;
+}

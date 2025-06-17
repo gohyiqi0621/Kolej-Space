@@ -1,0 +1,130 @@
+//
+// pages-rtl.scss
+//
+
+
+//  Tooltpster
+
+.demo-popover{
+  .popover {
+    float: right;
+  }
+}
+
+// email
+
+
+
+/* =============
+   Email
+============= */
+.mails {
+  td:last-of-type {
+    padding-right: 20px;
+  }
+
+  .chat-widget{
+      .chat-item-img {
+        float: right !important;
+        margin-left: 15px;
+        margin-right: 0px !important;
+      }
+  }
+}
+
+// Member
+.member-card {
+  .member-star {
+    left: 10px;
+    right: auto;
+  }
+}
+
+// Timelime
+
+.timeline{
+  .timeline-item{
+    .text-right{
+      text-align: right!important;
+    }
+  }
+}
+
+
+// faq
+.question-q-box {
+  float: right;
+}
+.question{
+  margin-right: 50px;
+}
+.answer{
+  margin-right: 50px;
+}
+
+// coming-soon
+
+.diamond{
+  .top{
+    &:before{
+      margin-left: 0px;
+      margin-right: -13px;
+      transform: skew(48deg);
+    }
+
+    &:after{
+      margin-left: 0px;
+      margin-right: 47px;
+      transform: skew(-48deg);
+    }
+  }
+  
+  .bot{
+    &:before{
+      margin-left: 0px;
+      margin-right: -27px;
+    }
+  }
+
+  &:after{
+    margin-left: 0px;
+    margin-right: 38px;
+  }
+}
+
+
+// blog
+.blog-post {
+  .post-image {
+      .badge {
+          right: 24px;
+          left: auto;
+      }
+  }
+}
+
+.property-card.property-horizontal {
+  .property-content {
+      .property-action {
+          a {
+              margin-left: 7px;
+              margin-right: auto;
+              i {
+                margin-left: 5px;
+                margin-right: auto;
+              }
+          }
+         
+      }
+  }
+}
+
+
+// Real Estate
+
+.property-card {
+  .property-label {
+    left: 10px;
+    right: auto;
+  }
+}

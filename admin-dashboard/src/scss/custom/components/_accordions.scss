@@ -1,0 +1,17 @@
+// 
+// accordions.scss
+//
+
+.accordion{
+    .card{
+      border: 1px solid $gray-200 !important;
+      .card-heading{
+        border:none;
+        .card-title{
+          a{
+            color: $gray-700;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Rangeslider | Zircos - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Responsive bootstrap 4 admin template" name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <link href="assets/libs/ion-rangeslider/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+
+    </head>
+
+    <body data-layout="horizontal">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            @@include('./partials/horizontal-nav.html')
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Zircos</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Admin UI </a></li>
+                                            <li class="breadcrumb-item active">Range Sliders</li>
+                                        </ol>
+                                    </div>
+                                    <h4 class="page-title">Range Sliders</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="card-box">
+                                    <h4 class="header-title">Ion Range Slider</h4>
+                                    <p class="sub-header">
+                                        Cool, comfortable, responsive and easily customizable range slider
+                                    </p>
+
+                                    <form class="form-horizontal">
+                                        <div class="form-group row">
+                                            <label for="range_01" class="col-sm-2 control-label">Default<span class="font-normal text-muted font-13 d-block">Start without params</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="range_01">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="range_02" class="col-sm-2 control-label"><b>Min-Max</b><span class="font-normal text-muted font-13 d-block">Set min value, max value and start point</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="range_02">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="range_03" class="col-sm-2 control-label"><b>Prefix</b><span class="font-normal text-muted font-13 d-block">showing grid and adding prefix "$"</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="range_03">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="range_04" class="col-sm-2 control-label"><b>Range</b><span class="font-normal text-muted font-13 d-block">Set up range with negative values</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="range_04">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="range_05" class="col-sm-2 control-label"><b>Step</b><span class="font-normal text-muted font-13 d-block">Using step 250</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="range_05">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="range_06" class="col-sm-2 control-label"><b>Custom Values</b><span class="font-normal text-muted font-13 d-block">Using any strings as values</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="range_06">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="range_07" class="col-sm-2 control-label"><b>Prettify Numbers</b><span class="font-normal text-muted font-13 d-block">Prettify enabled. Much better!</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="range_07">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row mb-0">
+                                            <label for="range_08" class="col-sm-2 control-label"><b>Disabled</b><span class="font-normal text-muted font-13 d-block">Lock slider by using disable option</span></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="range_08">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row -->
+
+                    </div>
+                    <!-- end container-fluid -->
+
+                </div>
+                <!-- end content -->
+
+                @@include('./partials/footer.html')
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        @@include('./partials/right-sidebar.html')
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- Ion Range Slider-->
+        <script src="assets/libs/ion-rangeslider/ion.rangeSlider.min.js"></script>
+
+        <!-- Range slider init js-->
+        <script src="assets/js/pages/range-sliders.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+
+    </body>
+
+</html>
